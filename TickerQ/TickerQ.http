@@ -1,6 +1,9 @@
-@TickerQ_HostAddress = http://localhost:5083
+@TickerQ_HostAddress = https://localhost:7087
 
-GET {{TickerQ_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{TickerQ_HostAddress}}/schedule
+Content-Type: application/json
 
-###
+{
+  "x": 123,
+  "y": 456
+}
